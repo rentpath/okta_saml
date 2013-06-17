@@ -2,8 +2,7 @@ module OktaSaml
   module SessionHelper
     def sign_in(user)
       cookies.signed[:remember_token] = {
-        :value => user.email,
-        :expires => 3.hours.from_now
+        :value => user.email
       }
       current_user = user
     end
