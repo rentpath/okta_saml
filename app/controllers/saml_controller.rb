@@ -21,7 +21,7 @@ class SamlController < ApplicationController
   private
 
   def redirect_url
-    session[:redirect_url]
+    session[:redirect_url] || root_url
   end
 
   # Rails override to handle unverified post requests from Okta
