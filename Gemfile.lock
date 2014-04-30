@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    okta_saml (2.0.0)
+    okta_saml (3.0.0)
       rails (>= 3.2.13)
       ruby-saml (~> 0.7.2)
 

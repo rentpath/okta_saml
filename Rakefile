@@ -12,6 +12,8 @@ rescue LoadError
   RDoc::Task = Rake::RDocTask
 end
 
+require 'bundler/gem_tasks'
+
 RDoc::Task.new(:rdoc) do |rdoc|
   rdoc.rdoc_dir = 'rdoc'
   rdoc.title    = 'OktaSaml'
