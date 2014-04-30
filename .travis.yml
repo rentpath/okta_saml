@@ -4,3 +4,9 @@ rvm:
   - 2.0.0
   - 2.1.1
   - jruby-19mode # JRuby in 1.9 mode
+notifications:
+  campfire:
+    rooms:
+      secure: "XjUE/Jcj9JMfWBsDgfIjQSKpRc9P8+PU1mH7L8hBBh7ZfGPUzvbBmeMtVfYoBF7pB8GE0nVgfbt7NN1aIqCaZmNflzfTUBTbESGxEGHz1sUTNaqoKbTgF9WTv1A0pkpCQEdjW3rOtIBIzkJF83nNIoJzj3KjrJVMrVIgz2HlojU="
+    on_success: always
+    on_failure: always
