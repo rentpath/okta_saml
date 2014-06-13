@@ -20,6 +20,7 @@ module OktaSaml
     end
 
     alias_method :okta_user, :current_user
+    alias_method :okta_user=, :current_user=
 
     def destroy
       sign_out
