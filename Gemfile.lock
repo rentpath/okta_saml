@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    okta_saml (3.0.0)
+    okta_saml (3.0.1)
       rails (>= 3.2.13)
       ruby-saml (~> 0.7.2)
 
@@ -49,7 +49,7 @@ GEM
       treetop (~> 1.4.8)
     mime-types (1.25.1)
     minitest (5.3.3)
-    multi_json (1.9.3)
+    multi_json (1.10.1)
     nokogiri (1.5.11)
     polyglot (0.3.4)
     rack (1.5.2)
