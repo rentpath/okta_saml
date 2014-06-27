@@ -36,4 +36,8 @@ describe 'saml controller' do
     end
   end
 
+  it "has a configurable parent class" do
+    # FakeParentController is configured in okta_saml initializer in the dummy app
+    expect(SamlController.ancestors).to include(FakeParentController)
+  end
 end
