@@ -1,8 +1,8 @@
 class SamlController < ApplicationController
   include OktaSaml::SessionHelper, OktaApplicationHelper
 
-  skip_before_action :okta_authenticate!, :okta_logout
-  skip_before_action :authenticate_user!
+  skip_before_filter :okta_authenticate!, :okta_logout
+  skip_before_filter :authenticate_user!
 
   def init
     redirect_to(idp_login_request_url(request))
