@@ -1,7 +1,0 @@
-development:
-  idp_sso_target_url: https://jaredbranum.okta.com/home/template_saml_2_0/0oa1ny13dcLZNMYMERHB/3079
-  idp_cert_fingerprint: CD:C7:C0:8A:DD:0E:0E:94:B1:33:0A:CA:EC:08:29:CC:44:85:A8:23
-
-acceptance:
-  idp_sso_target_url: https://primedia.okta.com/home/template_saml_2_0/0oa1qw8p50XOXFZVQELN/3079
-  idp_cert_fingerprint: C4:AD:2D:F4:5E:47:B6:85:BC:09:DD:48:DF:4B:42:8D:E3:A0:10:09

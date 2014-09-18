@@ -1,0 +1,6 @@
+development:
+  idp_sso_target_url: This is provided by Okta on the General tab under "Embed Link"
+  idp_cert_fingerprint: This is created from your certificate.  See the Readme for the command
+test:
+  idp_sso_target_url: http://www.example.com
+  idp_cert_fingerprint: This is created from your certificate.  See the Readme for the command
