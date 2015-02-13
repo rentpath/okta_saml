@@ -1,4 +1,4 @@
-class SamlController < ApplicationController
+class SamlController < OktaSaml.parent_controller.constantize
   include OktaSaml::SessionHelper, OktaApplicationHelper
 
   skip_before_filter :okta_authenticate!, :okta_logout
