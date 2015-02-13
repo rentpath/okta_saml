@@ -13,8 +13,7 @@ class OktaUser
     p error
   end
 
-  def self.retrieve_from_cookie(remember_token)
-    self.new(:email => remember_token) unless remember_token.blank?
+  def self.retrieve_from_cookie(cookie_hsh)
+    self.new(cookie_hsh) unless cookie_hsh.blank?
   end
-
 end
