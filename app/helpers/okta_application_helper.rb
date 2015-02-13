@@ -1,11 +1,11 @@
 module OktaApplicationHelper
 
   def idp_response(params)
-    Onelogin::Saml::Response.new(params[:SAMLResponse])
+    OneLogin::RubySaml::Response.new(params[:SAMLResponse])
   end
 
   def saml_settings(request)
-    settings = Onelogin::Saml::Settings.new
+    settings = OneLogin::RubySaml::Settings.new
 
     settings.assertion_consumer_service_url = saml_consume_url(host: request.host)
     settings.issuer                         = "http://#{request.port == 80 ? request.host : request.host_with_port}"
@@ -19,7 +19,7 @@ module OktaApplicationHelper
   end
 
   def idp_login_request_url(request)
-    idp_request = Onelogin::Saml::Authrequest.new
+    idp_request = OneLogin::RubySaml::Authrequest.new
     idp_request.create(saml_settings(request))
   end
 

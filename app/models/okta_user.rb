@@ -1,5 +1,5 @@
 class OktaUser
-  attr_accessor :email
+  attr_accessor :email, :attributes, :issuer
 
   def initialize(params)
     populate(params)
@@ -14,7 +14,7 @@ class OktaUser
   end
 
   def self.retrieve_from_cookie(remember_token)
-    OktaUser.new(:email => remember_token) unless remember_token.blank?
+    self.new(:email => remember_token) unless remember_token.blank?
   end
 
 end

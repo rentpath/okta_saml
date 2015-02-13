@@ -16,7 +16,7 @@ Gem::Specification.new do |gem|
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
   gem.test_files    = gem.files.grep(%r{^(test|spec|features)/})
 
-  gem.add_dependency "rails",     ">= 3.2.13"
-  gem.add_dependency "ruby-saml", "~> 0.7.2"
+  gem.add_dependency "rails",     ">= 3.2.13", "< 4.0.0"
+  gem.add_dependency "ruby-saml", "~> 0.9.1"
   gem.add_development_dependency "rspec-rails"
 end

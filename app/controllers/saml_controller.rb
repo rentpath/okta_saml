@@ -11,10 +11,10 @@ class SamlController < ApplicationController
     response = idp_response(params)
     response.settings = saml_settings(request)
     if response.is_valid?
-      sign_in(OktaUser.new({:email => response.name_id}))
+      sign_in(OktaUser.new(email: response.name_id, attributes: response.attributes, issuer: response.issuer))
       redirect_to redirect_url
     else
-      render :text => "Failure"
+      render text: "Failure"
     end
   end
 
