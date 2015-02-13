@@ -2,7 +2,11 @@ module OktaSaml
   module SessionHelper
     def sign_in(user)
       cookies.signed[:remember_token] = {
-        :value => user.email
+        value: {
+          email: user.email,
+          attributes: user.attributes,
+          issuer: user.issuer
+        }
       }
       self.current_user = user
     end

@@ -1,5 +1,9 @@
 # OktaSaml
 
+# Not maintained / Seeking a new maintainer
+Rentpath doesn't use SAML in our ruby applications anymore so keeping this project up today isn't likely.
+If you are interested in taking over this project please reach out to us.
+
 [![Gem Version](https://badge.fury.io/rb/okta_saml.svg)](http://badge.fury.io/rb/okta_saml)
 [![Code Climate](https://codeclimate.com/repos/5175815b56b1020c56000864/badges/aec34f2ab248de6035e0/gpa.png)](https://codeclimate.com/repos/5175815b56b1020c56000864/feed)
 [![Build Status](https://travis-ci.org/primedia/okta_saml.svg?branch=dev)](https://travis-ci.org/primedia/okta_saml)
@@ -62,6 +66,11 @@ The following steps are required when using the okta_saml gem
 1. Create an `okta_saml.yml` file in your application's config directory. A sample okta_saml.yml file has been included with this gem in the config directory with some configuration notes
 2. Add a `before_filter` using okta_authenticate! in the controllers where authentication is required
 
+
+## TODO:
+
+- update setting configs from YAML to configuration block
+- rails 4 support
 
 ## Contributing
 
