@@ -20,7 +20,7 @@ module OktaApplicationHelper
 
   def idp_login_request_url(request)
     idp_request = OneLogin::RubySaml::Authrequest.new
-    idp_request.create(saml_settings(request))
+    idp_request.create(saml_settings(request),{:RelayState => "#{request.host_with_port}"})
   end
 
 end
